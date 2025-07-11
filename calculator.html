@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <div class="hole_body">
+    <h1>Simple Calculator</h1>
+    <div id="main_body">
+        <input type="text" id="result" disabled>
+        <div id="buttons">
+           <button class="button_C" onclick="currentInput='';
+           document.getElementById('result').value = currentInput;">C</button>
+           <button class="button_C" onclick="currentInput=currentInput+'7';
+           document.getElementById('result').value = currentInput;">7</button>
+           <button class="button_C" onclick="currentInput=currentInput+'8';
+           document.getElementById('result').value = currentInput;">8</button>
+           <button class="button_C" onclick="currentInput=currentInput+'9';
+           document.getElementById('result').value = currentInput;">9</button>
+           <button class="button_C" onclick="currentInput=currentInput+'/';
+           document.getElementById('result').value = currentInput;">/</button>
+           <button class="button_C" onclick="currentInput=currentInput+'4';
+           document.getElementById('result').value = currentInput;">4</button>
+           <button class="button_C" onclick="currentInput=currentInput+'5';
+           document.getElementById('result').value = currentInput;">5</button>
+           <button class="button_C" onclick="currentInput=currentInput+'6';
+           document.getElementById('result').value = currentInput;">6</button>
+           <button class="button_C" onclick="currentInput=currentInput+'*';
+           document.getElementById('result').value = currentInput;">*</button>
+           <button class="button_C" onclick="currentInput=currentInput+'1';
+           document.getElementById('result').value = currentInput;">1</button>
+           <button class="button_C" onclick="currentInput=currentInput+'2';
+           document.getElementById('result').value = currentInput;">2</button>
+           <button class="button_C" onclick="currentInput=currentInput+'3';
+           document.getElementById('result').value = currentInput;">3</button>
+           <button class="button_C" onclick="currentInput=currentInput+'-';
+           document.getElementById('result').value = currentInput;">-</button>
+           <button class="button_C" onclick="currentInput=currentInput+'0';
+           document.getElementById('result').value = currentInput;">0</button>
+           <button class="button_C" onclick="let main_result = eval(currentInput);
+           currentInput=main_result;
+           document.getElementById('result').value = currentInput;">=</button>
+           <button class="button_C" onclick="currentInput=currentInput+'+';
+           document.getElementById('result').value = currentInput;">+</button>
+        </div>
+    </div>
+</div>
+<script>
+    let currentInput = '';
+   document.getElementById('result').value = currentInput;
+</script>
+</body>
+</html>
